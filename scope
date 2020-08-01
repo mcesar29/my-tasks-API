@@ -1,0 +1,54 @@
+Sistema de Tarefas:
+
+* Usuario
+- id
+- nome
+- login
+- senha
+- permissão
+
+* Vinculo
+- Id
+- id_usuario_solicitante
+- id_usuario_solicitado
+- nome
+- data_pedido
+- data_aceito
+- data_excluido
+- status (PENDENTE, ACEITO, EXCLUIDO)
+
+* tipo_tarefa
+- id
+- nome
+- id_usuario_fk
+
+* Tarefa_pessoal
+- id
+- nome
+- descrição
+- data_publicacao
+- data_final
+- data_execução
+- id_usuario
+- Lista tipo_tarefa
+- Status (PENDENTE, ATRASADO, FEITO, CANCELADO, ADIADO)
+
+* Tarefa_outros
+- id
+- nome
+- descrição
+- data_puclicação
+- data_final
+- data_execução
+- id_usuario_solicitante
+- id_usuario_solicitado
+- Status (ENVIADO, RECEBIDO, EXECUTADO, CANCELADO, ADIADO)
+
+* Chat
+- Id
+- Id_solicitante
+- Id_solicitado
+- mensagem
+- status (RECEBIDO, VISUALIZADO)
+- data_envio
+- data_visto
